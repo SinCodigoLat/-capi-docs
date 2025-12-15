@@ -1,0 +1,99 @@
+# Configuración de Jekyll para GitHub Pages
+# Tema: just-the-docs (navegación mejorada y búsqueda integrada)
+
+title: CAPI App - Documentación
+description: Documentación técnica y de usuario completa para CAPI App
+url: "https://sincodigolat.github.io"
+baseurl: "/-capi-docs"
+
+# Tema - Usar remote_theme para just-the-docs en GitHub Pages
+# Alternativa: usar theme: minima si just-the-docs no está disponible
+remote_theme: just-the-docs/just-the-docs
+
+# Plugins permitidos en GitHub Pages
+plugins:
+  - jekyll-feed
+  - jekyll-seo-tag
+  - jekyll-remote-theme
+
+# Configuración del sitio
+lang: es
+locale: es_MX
+
+# Configuración de just-the-docs
+just_the_docs:
+  # Navegación
+  nav_fold: true
+  nav_external_links: true
+  
+  # Búsqueda
+  search_enabled: true
+  search:
+    heading_level: 2
+    content: true
+  
+  # Colores (usando colores CAPI)
+  color_scheme: light
+  color_mode: light
+  
+  # Logo y branding
+  logo: false
+  
+  # Footer
+  footer_content: "CAPI App - Centro de Atención Integral<br>Desarrollado por SinCodigoLat"
+
+# Excluir archivos del build
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - node_modules
+  - vendor/bundle/
+  - vendor/cache/
+  - vendor/gems/
+  - vendor/ruby/
+  - .git
+  - .gitignore
+  - README.md
+
+# Incluir archivos
+include:
+  - _pages
+
+# Configuración de Markdown
+markdown: kramdown
+kramdown:
+  input: GFM
+  syntax_highlighter: rouge
+  syntax_highlighter_opts:
+    block:
+      line_numbers: true
+
+# Configuración de colecciones
+collections:
+  manual_tecnico:
+    output: true
+  manual_usuario:
+    output: true
+  referencias:
+    output: true
+
+# Configuración por defecto
+defaults:
+  - scope:
+      path: ""
+      type: "pages"
+    values:
+      layout: "default"
+  - scope:
+      path: "manual-tecnico"
+    values:
+      layout: "default"
+  - scope:
+      path: "manual-usuario"
+    values:
+      layout: "default"
+  - scope:
+      path: "referencias"
+    values:
+      layout: "default"
+

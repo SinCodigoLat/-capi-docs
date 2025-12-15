@@ -1,0 +1,17 @@
+# Configuración de Netlify para Jekyll
+
+[build]
+  base = "docs"
+  command = "bundle exec jekyll build"
+  publish = "docs/_site"
+
+[build.environment]
+  JEKYLL_ENV = "production"
+  RUBY_VERSION = "3.0"
+
+# Redirects para mantener compatibilidad
+[[redirects]]
+  from = "/*"
+  to = "/index.html"
+  status = 200
+
