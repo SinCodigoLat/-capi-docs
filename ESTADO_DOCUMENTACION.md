@@ -1,9 +1,9 @@
 # Estado de la Documentación - CAPI App
 
-## ✅ Documentación Completa y Lista
+## ✅ Documentación Completa y Publicada
 
 **Fecha de creación:** Diciembre 2024  
-**Estado:** ✅ **COMPLETA Y LISTA PARA GITHUB PAGES**
+**Estado:** ✅ **COMPLETA Y PUBLICADA EN PRODUCCIÓN**
 
 ## 📊 Resumen
 
@@ -133,19 +133,35 @@ docs/
 
 ## 🔗 URLs Configuradas
 
-- **Repositorio:** https://github.com/SinCodigoLat/capi-app
-- **GitHub Pages:** https://sincodigolat.github.io/capi-app/
-- **Documentación:** https://sincodigolat.github.io/capi-app/
+### Sitios Publicados
 
-## 📝 Próximo Paso
+- **Manual de Usuario (Público):** http://manual.doctorcapi.com
+  - Hosting: GitHub Pages
+  - Repositorio: https://github.com/SinCodigoLat/capi-app-docs-public
 
-**Configurar GitHub Pages:**
+- **Documentación Completa (Privado):** https://docs.doctorcapi.com
+  - Hosting: Firebase Hosting
+  - Repositorio: https://github.com/SinCodigoLat/capi-app-docs-private
+  - URL Alternativa: https://docs-private.web.app
 
-1. Ve a: https://github.com/SinCodigoLat/capi-app/settings/pages
-2. Source: Branch `main`, Folder `/docs`
-3. Guardar
+## 📝 Estado de Publicación
 
-El sitio se construirá automáticamente y estará disponible en unos minutos.
+**✅ SITIOS PUBLICADOS Y FUNCIONANDO**
+
+### Manual de Usuario (Público)
+- ✅ Repositorio creado y configurado
+- ✅ GitHub Pages configurado
+- ✅ Dominio personalizado: manual.doctorcapi.com
+- ✅ Deploy automático activo
+- ✅ Sitio funcionando: http://manual.doctorcapi.com
+
+### Documentación Completa (Privado)
+- ✅ Repositorio creado y configurado
+- ✅ Firebase Hosting configurado
+- ✅ Sitio Firebase: docs-private
+- ✅ Dominio personalizado: docs.doctorcapi.com
+- ✅ Deploy automático con GitHub Actions
+- ✅ Sitio funcionando: https://docs.doctorcapi.com
 
 ## ✨ Características de la Documentación
 
@@ -168,14 +184,27 @@ El sitio se construirá automáticamente y estará disponible en unos minutos.
 
 ## 🎉 Estado Final
 
-**La documentación está 100% completa y lista para ser publicada en GitHub Pages.**
+**✅ La documentación está 100% completa y publicada en producción.**
 
-Solo falta:
-1. Migrar el repositorio a SinCodigoLat/capi-app
-2. Configurar GitHub Pages en Settings
-3. ¡Disfrutar de la documentación completa!
+### Logros Completados
+
+1. ✅ Separación de documentación pública y privada
+2. ✅ Repositorios creados y configurados
+3. ✅ Hosting configurado (GitHub Pages + Firebase Hosting)
+4. ✅ Dominios personalizados configurados
+5. ✅ Deploy automático funcionando
+6. ✅ Sitios publicados y accesibles
+
+### Estructura Final
+
+```
+documentacion-capi/
+├── capi-app-docs-public/     → manual.doctorcapi.com (GitHub Pages)
+└── capi-app-docs-private/     → docs.doctorcapi.com (Firebase Hosting)
+```
 
 ---
 
-**Última actualización:** Diciembre 2024
+**Última actualización:** Diciembre 2024  
+**Estado:** ✅ **PUBLICADO Y FUNCIONANDO**
 

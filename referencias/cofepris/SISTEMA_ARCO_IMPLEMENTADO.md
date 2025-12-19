@@ -183,9 +183,9 @@ Menú Principal → Gestión → Solicitudes ARCO → Lista de Solicitudes
 
 ## 📚 **Documentación Adicional**
 
-- **Modelo Legal:** `docs/cofepris/Derechos-ARCO.md`
-- **Plan de Cumplimiento:** `docs/cofepris/PLAN_CUMPLIMIENTO_COFEPRIS.md`
-- **Implementación de Auditoría:** `docs/cofepris/IMPLEMENTACION_LOGGING_CRUD.md`
+- **Modelo Legal:** [Derechos ARCO](./Derechos-ARCO.md)
+- **Plan de Cumplimiento:** [Plan de Cumplimiento COFEPRIS](./PLAN_CUMPLIMIENTO_COFEPRIS.md)
+- **Implementación de Auditoría:** [Implementación de Logging CRUD](./IMPLEMENTACION_LOGGING_CRUD.md)
 
 ## ✅ **Estado Actual - ACTUALIZADO**
 

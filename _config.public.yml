@@ -1,13 +1,12 @@
-# Configuración de Jekyll para GitHub Pages
-# Tema: just-the-docs (navegación mejorada y búsqueda integrada)
+# Configuración de Jekyll para GitHub Pages - REPOSITORIO PÚBLICO
+# Solo contiene Manual de Usuario
 
-title: CAPI App - Documentación Completa
-description: Documentación técnica y de usuario completa para CAPI App
-url: "https://sincodigolat.github.io"
-baseurl: "/capi-app-docs-private"
+title: CAPI App - Manual de Usuario
+description: Guías de usuario para CAPI App - Plataforma médica completa
+url: "https://manual.doctorcapi.com"
+baseurl: ""
 
 # Tema - Usar remote_theme para just-the-docs en GitHub Pages
-# Alternativa: usar theme: minima si just-the-docs no está disponible
 remote_theme: just-the-docs/just-the-docs
 
 # Plugins permitidos en GitHub Pages
@@ -40,7 +39,7 @@ just_the_docs:
   logo: false
   
   # Footer
-  footer_content: "CAPI App - Centro de Atención Integral<br>Desarrollado por SinCodigoLat<br>🔒 Documentación Privada - Solo para la Empresa"
+  footer_content: "CAPI App - Centro de Atención Integral<br>Desarrollado por SinCodigoLat"
 
 # Excluir archivos del build
 exclude:
@@ -54,6 +53,8 @@ exclude:
   - .git
   - .gitignore
   - README.md
+  - manual-tecnico/
+  - referencias/
 
 # Incluir archivos
 include:
@@ -68,13 +69,9 @@ kramdown:
     block:
       line_numbers: true
 
-# Configuración de colecciones
+# Configuración de colecciones (solo manual_usuario)
 collections:
-  manual_tecnico:
-    output: true
   manual_usuario:
-    output: true
-  referencias:
     output: true
 
 # Configuración por defecto
@@ -85,15 +82,7 @@ defaults:
     values:
       layout: "default"
   - scope:
-      path: "manual-tecnico"
-    values:
-      layout: "default"
-  - scope:
       path: "manual-usuario"
-    values:
-      layout: "default"
-  - scope:
-      path: "referencias"
     values:
       layout: "default"
 

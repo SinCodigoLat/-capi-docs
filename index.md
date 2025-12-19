@@ -79,9 +79,16 @@ Documentación técnica detallada de funcionalidades específicas y guías avanz
 
 ## 🔗 Enlaces Útiles
 
+### Sitios Publicados
+
+- [Manual de Usuario (Público)](http://manual.doctorcapi.com) - Guías para usuarios finales
+- [Documentación Completa (Privado)](https://docs.doctorcapi.com) - Documentación técnica completa
+
+### Repositorios
+
 - [Repositorio GitHub (Privado)](https://github.com/SinCodigoLat/capi-app)
-- [Repositorio Documentación (Público)](https://github.com/SinCodigoLat/-capi-docs)
-- [README Principal](../README.md)
+- [Repositorio Documentación Pública](https://github.com/SinCodigoLat/capi-app-docs-public)
+- [Repositorio Documentación Privada](https://github.com/SinCodigoLat/capi-app-docs-private)
 - [Estado del Proyecto](./referencias/development/TODO.md)
 
 ## 📞 Soporte

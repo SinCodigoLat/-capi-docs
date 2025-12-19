@@ -141,9 +141,9 @@ Estos registros son utilizados para:
 
 ## 📎 DOCUMENTOS DE REFERENCIA
 
-- **Análisis completo:** `docs/cofepris/ACTUALIZACIONES_LEGALES_NECESARIAS.md`
-- **Plan de cumplimiento:** `docs/cofepris/PLAN_CUMPLIMIENTO_COFEPRIS.md`
-- **Implementación técnica:** `docs/cofepris/FASE1_PERMISOS_IMPLEMENTADO.md`
+- **Análisis completo:** [Actualizaciones Legales Necesarias](./ACTUALIZACIONES_LEGALES_NECESARIAS.md)
+- **Plan de cumplimiento:** [Plan de Cumplimiento COFEPRIS](./PLAN_CUMPLIMIENTO_COFEPRIS.md)
+- **Implementación técnica:** [Fase 1 Permisos Implementado](./FASE1_PERMISOS_IMPLEMENTADO.md)
 
 ---
 
