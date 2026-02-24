@@ -263,6 +263,21 @@ interface HeaderProps {
 - **Integration Status:** Estado de APIs externas
 - **Configuraciones Globales:** Settings, API keys, webhooks, notificaciones
 
+### **💳 MÓDULO 8: GESTIÓN DE PLANES Y SUSCRIPCIONES**
+
+#### **8.1 Administración de Planes CAPI**
+**Como Superadministrador CAPI, quiero gestionar los planes de suscripción, sus límites y días de prueba para controlar el acceso a la plataforma.**
+
+**Funcionalidades principales:**
+- **CRUD de Planes:** Crear, editar y eliminar planes (Starter, Premium, Elite, etc.).
+- **Gestión de Límites:** Configurar límites de pacientes, personal y créditos IA. (Valor `0` = Ilimitado).
+- **Control de Días de Prueba (Trial):** Asignar días de prueba gratuitos por plan.
+- **Tipos de Planes:** Distinción entre planes públicos (visibles en la app) e internos (isPublic = false).
+- **Asignación Manual a Clínicas:** Capacidad de otorgar planes gratuitos o ilimitados manualmente desde el panel.
+  - El sistema desconecta internamente las validaciones de Stripe marcando `stripe_subscription_status = active`.
+  - El panel limpia los IDs de Stripe para evitar confusiones futuras.
+  - Alerta de seguridad si la clínica tenía suscripción Stripe activa para que el administrador la cancele manualmente.
+
 ---
 
 ## 🔐 SEGURIDAD Y COMPLIANCE

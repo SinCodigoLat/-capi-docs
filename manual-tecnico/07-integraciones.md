@@ -43,6 +43,18 @@ final isValid = await SubscriptionService.validateSubscription(
 );
 ```
 
+### Asignación Manual / Planes Ilimitados (Panel Admin)
+
+Es posible asignar planes sin interactuar directamente con el flujo de compra, útil para:
+- Otorgar un **Plan Ilimitado** u otros planes internos (isPublic = false).
+- Planes con **Monto 0** (gratuitos).
+
+Al asignar estos planes desde el Panel de Administrador:
+1. Se actualiza el `planSuscripcion` en Firestore.
+2. Se limpian los IDs previos de Stripe (`stripe_subscription_id`, `stripe_subscription_price_id`, `stripe_subscription_product_id`).
+3. Se marca manualmente el status: `stripe_subscription_status = 'active'`, para que la App Móvil reconozca el servicio como vigente sin requerir verificación con Stripe.
+4. **Importante:** Si la clínica poseía una suscripción pagada activa previamente, el administrador debe ir al Dashboard de Stripe para **cancelar el cobro iterativo manualmente**, dado que el Panel no hace la cancelación directa en la API por seguridad.
+
 ### Stripe Connect
 
 Stripe Connect permite que pacientes paguen directamente a doctores.

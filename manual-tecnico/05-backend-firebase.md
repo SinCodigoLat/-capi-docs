@@ -37,7 +37,22 @@ Información de clínicas.
 - `zoom` (ConfZoomStruct)
 - `planSuscripcion` (Reference)
 - `stripe_subscription_id`, `stripe_subscription_status`
-- `credits_ai`, `limitePacientes`, `limitePersonal`
+- `creditsAi`
+- `limitePacientes`, `limitePersonal` (El valor `0` representa límite "Ilimitado")
+
+#### `planesSuscripcion`
+Catálogo de planes disponibles en el sistema.
+
+**Campos principales:**
+- `title`, `description`, `priceLabel`
+- `priceMXN`, `currency`
+- `features` (Array de strings)
+- `limitPacientes`, `limitPersonal` (`0` equivale a Ilimitado)
+- `creditsAi`
+- `stripePriceId`, `revenueCatPackageId`
+- `isPopular`, `isActive`, `isPublic`
+- `trialDays` (Días de prueba configurables por plan)
+- `sortOrder`
 
 #### `citas`
 Citas médicas.
